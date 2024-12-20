@@ -14,8 +14,10 @@
   
   .midcol {
     float: left;
-    width: 100%;
-    padding: 100px;
+    width: 25%;
+    padding: 60px;
+    gap: 60px;
+    border: 1px solid white;
   }
   
   .midd:after {
@@ -50,18 +52,24 @@
     width: 50%;
   }
   .midd {
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /* On screens that are 480px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 200px) {
+  .rect {
+    height: 90%;
+  }
   .column {
     width: 100%;
   }
   .midd {
+    width: 200%;
+    padding: 20px;
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
 </style>
@@ -90,7 +98,6 @@
 </div>
   
 <div class="row">
-  
   
   <div class="column" style="background-color:#aaa;">
     <h2>Column 1</h2>
